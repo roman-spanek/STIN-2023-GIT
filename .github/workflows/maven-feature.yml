@@ -9,9 +9,10 @@
 name: Java CI with TEST
 
 on:
-
-  pull_request:
-    branches: [ "feature/*" ]
+  push:
+    branches:
+      - main
+      - 'feature/**'
 
 jobs:
   build:
